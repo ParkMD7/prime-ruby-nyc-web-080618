@@ -5,10 +5,10 @@ def prime?(number)
   if number <= 1
     false
   else
-    for prime in 2..n do
-      if n == prime
+    for n in 2..number do
+      if number == n
         true
-      else n % prime == 0
+      else number % n == 0
         false
       end
     end
