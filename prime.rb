@@ -8,6 +8,9 @@ def prime?(number)
     for prime in 2..number do
       if number == prime
         true
-      else 
-  
+      else number % prime == 0
+        false
+      end
+    end
+  end
 end
